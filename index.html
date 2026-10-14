@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble Tea Order Builder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Build your bubble tea</h1>
+
+  <fieldset>
+    <legend>Tea</legend>
+    <!-- TODO: a <select> with id="tea" and 4 options. Black tea is selected by default -->
+    <select id="tea" name="tea">
+        <option value="black-tea" selected>Black Tea</option>
+        <option value="green-tea">Green Tea</option>
+        <option value="oolong-tea">Oolong Tea</option>
+        <option value="alishan-tea">Alishan Tea</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Flavour</legend>
+    <!-- TODO: a <select> with id="flavour", a Milk optgroup, a Fruit optgroup, and a None option. Whole milk is selected by default -->
+    <select id="flavour" name="flavour">
+        <optgroup label="Milk">
+            <option value="whole-milk" selected>Whole milk</option>
+            <option value="oat-milk">Oat milk</option>
+            <option value="soy-milk">Soy milk</option>
+        </optgroup>
+        <optgroup label="Fruit">
+            <option value="peach" >Peach</option>
+            <option value="lychee">Lychee</option>
+            <option value="mango">Mango</option>
+            <option value="passionfruit">Passionfruit</option>
+        </optgroup>
+        <option value="none">None</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Size</legend>
+    <!-- TODO: 3 radio buttons, all with name="size". Medium is checked by default -->
+    <label><input type="radio" name="size" value="small"> Small</label>
+    <label><input type="radio" name="size" value="medium" checked> Medium</label>
+    <label><input type="radio" name="size" value="large"> Large</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Sugar</legend>
+    <!-- TODO: 3 radio buttons, all with name="sugar". 50% is checked by default -->
+    <label><input type="radio" name="sugar" value="0"> 0%</label>
+    <label><input type="radio" name="sugar" value="50" checked> 50%</label>
+    <label><input type="radio" name="sugar" value="100"> 100%</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Toppings</legend>
+    <!-- TODO: 3 checkboxes, all with name="topping". None checked by default -->
+    <label><input type="checkbox" name="topping" value="lychee-jelly"> Lychee Jelly</label>
+    <label><input type="checkbox" name="topping" value="boba"> Boba </label>
+    <label><input type="checkbox" name="topping" value="aloe-vera"> Aloe Vera</label>
+  </fieldset>
+
+  <section>
+    <h2>Your order</h2>
+    <p id="summary"></p>
+    <p id="price"></p>
+  </section>
+</body>
+</html>
