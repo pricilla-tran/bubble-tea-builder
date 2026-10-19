@@ -49,9 +49,31 @@ function updateOrder() {
     const toppingsPrice = toppings.reduce((sum, topping) => sum + prices.topping[topping], 0);
 
     const total = sizePrice + teaPrice + flavourPrice + toppingsPrice;
+    const priceElement = document.querySelector("#price");
+    priceElement.textContent = `$${total.toFixed(2)}`;
+
+    let toppingText = "No toppings";
+    if (toppings.length > 0) {
+      toppingText = toppings.map(formatName).join(" + ") // map with formatName, then join with " + "
+    }
+
+    const summary = `${formatName(tea)}, ${formatName(flavour)}, ${formatName(size)}, ${sugar}%, ${toppingText}`;
+    document.querySelector("#summary").textContent = summary;
 
     console.log(total);
     
 }
 
-updateOrder()
+function formatName(ingredient) {
+  return ingredient
+  .split("-")                                      // Split by spaces
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize first letter
+  .join(" "); 
+  // console.log(result)
+}
+
+document.querySelectorAll("select, input").forEach(element => {
+  element.addEventListener("change", updateOrder);
+});
+
+updateOrder();
