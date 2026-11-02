@@ -1,19 +1,19 @@
 # Bubble Tea Order Builder
 
-A one-line description of what it does.
+A cute bubble tea ordering app
 
-**[Try it live](your GitHub Pages link)**
+[**[Try it live](your GitHub Pages link)**](https://pricilla-tran.github.io/bubble-tea-builder/)
 
-![Screenshot of the app](screenshot.png)
 
 ## Features
-- (2–4 short points about what a customer can do)
+- Build Your Custom Boba Drink
 
 ## Built with
 HTML, CSS and TypeScript (strict mode), with no frameworks.
 
 ## What I learned
-- (3 points, in your own words)
+- I learnt about typing and Typescript vs Javascript
+- Learnt how to set defaults for radio buttons and checkboxes
 
 ## Running it locally
 1. `npm install`
