@@ -2,7 +2,7 @@
 
 A cute bubble tea ordering app
 
-[**[Try it live](your GitHub Pages link)**](https://pricilla-tran.github.io/bubble-tea-builder/)
+**[Try it live](https://pricilla-tran.github.io/bubble-tea-builder/)**
 
 
 ## Features
